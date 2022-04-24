@@ -5,15 +5,15 @@ param minReplicas int = 0
 
 param nodeImage string 
 param nodePort int = 3000
-var nodeServiceAppName = 'node-app'
+var nodeServiceAppName = 'gallery'
 
 param pythonImage string
 param pythonPort int = 5000
-var pythonServiceAppName = 'python-app'
+var pythonServiceAppName = 'locations'
 
 param goImage string
 param goPort int = 8050
-var goServiceAppName = 'go-app'
+var goServiceAppName = 'inventory'
 
 param apimName string = 'store-api-mgmt-${uniqueString(resourceGroup().id)}'
 param deployApim bool = true
